@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
 * {
   padding: 0px;
@@ -47,6 +47,7 @@ header .navegacao-primaria li a {
 /* dowload cv secao */
 
 .section-div {
+  animation: inicializar 0.7s forwards;
   background-color: #000;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -85,4 +86,14 @@ header .navegacao-primaria li a {
 
 .section-div img {
   max-width: 100%;
+}
+
+@keyframes inicializar {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
 }
