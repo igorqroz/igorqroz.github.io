@@ -1,0 +1,70 @@
+:root {
+  --cor-de-fundo: #aee5ff;
+  --cor-da-borda-fundo: #ffffff;
+  --cor-da-borda-card: #b9e9ff;
+  --cor-da-primeira-sombra: #b9e9ff;
+  --cor-da-segunda-sombra: #ffffff;
+  --cor-da-hr: #b8e8ff;
+  --cor-info: #588296;
+  --cor-social: #1e3050;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cor-de-fundo);
+  height: 100vh;
+}
+
+.card {
+  text-align: center;
+  border-radius: 25px;
+  border: solid 5px var(--cor-da-borda-card);
+  background-color: var(--cor-da-borda-fundo);
+  box-shadow: -10px 0 80px var(--cor-da-primeira-sombra),
+    10px 0 80px var(--cor-da-segunda-sombra);
+}
+
+.info {
+  flex-direction: column;
+  align-items: center;
+}
+
+.info hr {
+  width: 100%;
+  border: solid 1px var(--cor-da-hr);
+  margin: 5px 0px;
+}
+
+.info img {
+  padding: 10px;
+  width: 150px;
+}
+
+.info p {
+  color: #1e3050;
+  padding: 10px;
+}
+
+.info p span,
+.info .cidade {
+  color: var(--cor-info);
+}
+
+.social ul {
+  display: flex;
+}
+
+.social li {
+  padding: 10px;
+  margin: 15px;
+}
+
+.fa-github-square,
+.fa-linkedin,
+.fa-instagram-square {
+  color: var(--cor-social);
+  font-size: 50px;
+}
